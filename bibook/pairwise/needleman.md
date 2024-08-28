@@ -142,7 +142,7 @@ align: left
 ````{exercise} Needleman-Wunch Alignment 2
 :label: ex-nwexe2
 
-Calculate the Needleman Wunch Alignment of th following two sequences:
+Calculate the Needleman Wunch Alignment of the following two sequences:
 
 ```
 GCAGCTA   
