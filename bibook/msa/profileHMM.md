@@ -49,7 +49,7 @@ A Profile HMM is structured to mirror the columns of an MSA, with three main sta
 
 ### Emission Probabilities
 
-Emission probabilities in a Profile HMM quantify the likelihood of observing a specific amino acid or nucleotide at each position in an alignment. These probabilities are stored within match, insertion states (delete states are silent and dont emit sequence) and are derived from the frequencies of residues or nucleotides observed in the Multiple Sequence Alignment (MSA) used to construct the model. Mathematically, the emission probability $e_i(x)$ for observing residue $x$ at position $i$ in the alignment is calculated as:
+Emission probabilities in a Profile HMM quantify the likelihood of observing a specific amino acid or nucleotide at each position in an alignment. These probabilities are stored within match, insertion states (delete states are silent and don't emit sequence) and are derived from the frequencies of residues or nucleotides observed in the Multiple Sequence Alignment (MSA) used to construct the model. Mathematically, the emission probability $e_i(x)$ for observing residue $x$ at position $i$ in the alignment is calculated as:
 
 $e_i(x) = \frac{{\text{{Count of residue }} x \text{{ at position }} i}}{{\text{{Total count of residues at position }} i}}$.
 
