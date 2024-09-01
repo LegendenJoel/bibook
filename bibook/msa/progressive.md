@@ -1,6 +1,6 @@
 # Multiple Sequence Alignments
 
-## Intoduction 
+## Introduction 
 
 While pairwise alignments enable comparisons between two sequences, many biological analyses require a more comprehensive approach: the alignment of multiple sequences simultaneously. Multiple sequence alignments (MSAs) offer a holistic view of sequence similarities and differences, illuminating functional and evolutionary relationships across diverse genomes and proteomes.
 
@@ -10,7 +10,7 @@ In principle, one can use dynamic programming to form MSAs. We can archive such 
 
 ### Iterative Approaches as a Practical Alternative
 
-Given the inefficiencies of dynamic programming for MSAs, bioinformaticians have turned to heuristics that mimic the behaviour of full dynamic programming. Particularly iterative approaches, such as progressive alignment . These methods simplify the alignment process by breaking it down into manageable steps. Progressive alignment, for instance, first generates a guide tree based on pairwise similarities, then iteratively aligns sequences according to the tree's order. This reduces the computational burden and allows for the processing of large datasets in a reasonable time frame.
+Given the inefficiencies of dynamic programming for MSAs, bioinformaticians have turned to heuristics that mimic the behaviour of full dynamic programming. Particularly iterative approaches, such as progressive alignment. These methods simplify the alignment process by breaking it down into manageable steps. Progressive alignment, for instance, first generates a guide tree based on pairwise similarities, then iteratively aligns sequences according to the tree's order. This reduces the computational burden and allows for the processing of large datasets in a reasonable time frame.
 
 ## Progressive Alignments
 
@@ -30,7 +30,7 @@ The process builds alignments in a stepwise manner, starting with the most simil
 
 1. Compute Pairwise Alignments: Initially, calculate all pairwise alignments between each pair of sequences in $C$ using a suitable algorithm such as Needleman-Wunsch or Smith-Waterman. This provides a matrix of scores or distances that indicate how similar or different each pair of sequences is.
 
-2. Use the pairwise distances to identify the two sequences in $C$, $A_i$ and  $A_j$ that are closest (those with the highest similarity score or lowest distance), and form a alignment of those two sequences.  Remove $A_i$ and $A_j$ from $C$. We call the alignment of those two sequences $B$.
+2. Use the pairwise distances to identify the two sequences in $C$, $A_i$ and  $A_j$ that are closest (those with the highest similarity score or lowest distance), and form an alignment of those two sequences.  Remove $A_i$ and $A_j$ from $C$. We call the alignment of those two sequences $B$.
 
 3. Add $B$ to $C$. Set the distance from $B$ to each of the other sequences in $C$ to the average of their distance from $A_i$ and $A_j$.
 
